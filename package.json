@@ -1,5 +1,5 @@
 {
-  "name": "rag-based-internal-knowledge-assistant",
+  "name": "rag-knowledge-assistant",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -13,4 +13,6 @@
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["
+    "development": ["last 1 chrome version"]
+  }
+}
