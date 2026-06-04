@@ -1,18 +1,21 @@
-# RAG-based Internal Knowledge Assistant
+# RAG-Powered Internal Knowledge Assistant
 
-An AI-powered policy search tool for JPMorgan built with React and Claude API.
+A Generative AI project that uses Retrieval-Augmented Generation (RAG) to answer questions from internal knowledge-base documents.  
+The system retrieves relevant document chunks using BM25 and passes them as context to an LLM to generate grounded, document-aware answers.
 
-## What it does
-Employees can ask plain-English questions about compliance and regulatory 
-policies and get accurate answers grounded in source documents.
+> This is a simulated finance-domain/internal knowledge assistant built for learning purposes. It does not use confidential or official company data.
 
-## Tech Stack
-- React
-- Claude API (Anthropic)
-- RAG Architecture (BM25 retrieval)
+---
 
-## Documents Covered
-AML, Basel III, GDPR, Volcker Rule, Dodd-Frank, MiFID II, Operational Risk, Cloud Security
+## Problem Statement
 
-## How RAG works
-User Query → BM25 Retrieval → Top 3 Docs → Claude API → Grounded Answer
+Large organizations often store important information across long policy documents, compliance manuals, FAQs, and internal knowledge bases.  
+Searching these documents manually is slow and inefficient.
+
+This project solves that problem by allowing users to ask questions in natural language and receive answers based only on the available knowledge-base content.
+
+Example:
+
+```text
+User: What is the policy for customer data handling?
+Assistant: According to the retrieved policy document, customer data must be...
